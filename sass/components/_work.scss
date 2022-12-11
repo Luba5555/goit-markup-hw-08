@@ -1,0 +1,52 @@
+
+.work {
+    
+    @include section(0px, 94px);
+
+    &__title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: calc(42 /36);
+        text-align: center;
+        color: var(--main-title-color);
+        margin-bottom: 50px;
+    }
+    
+    &__list {
+        display: flex;
+    }
+    &__item {
+        position: relative;
+        margin-right: 30px;
+        &:last-child {
+            margin-right: 0;
+        }
+        &__card {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+        
+    }
+    &__desc {
+        position: absolute;
+        bottom: 0;
+        margin: 0;
+        width: 100%;
+        height: 70px;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        font-weight: 700;
+        line-height: calc(16 / 14);
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    
+        color: var(--background-color);
+        background: rgba(47, 48, 58, 0.8);
+    }
+    
+}

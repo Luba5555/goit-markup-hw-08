@@ -1,0 +1,31 @@
+.btn {
+    background-color: var(--btn-color);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--banner-text-color);
+    
+    display: inline-block;
+    border: none;
+   
+    border-radius: 4px;
+    &--banner {
+        cursor: pointer;
+    
+        padding: 10px 32px;
+        min-width: 216px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        
+        transition: background-color var(--time) var(--function-time);
+    }
+    
+    &--banner:hover,
+    &--banner:focus {
+        background-color: var(--btn-color-hover);
+    }
+}
+

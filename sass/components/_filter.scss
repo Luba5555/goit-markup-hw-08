@@ -1,0 +1,43 @@
+.filter {
+    &__list {
+        display: flex;
+        margin-bottom: 50px;
+        justify-content: center;
+    }
+
+&__btn, &-total__btn {
+    background: var(--background-team-color);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(26 / 16);
+    text-align: center;
+    color: var(--main-title-color);
+    cursor: pointer;
+    border: none;
+    min-width: 73px;
+    display: inline-block;
+    padding: 6px 25px 6px 25px;
+    border-radius: 4px;
+
+    transition: color var(--time) var(--function-time), background-color var(--time) var(--function-time);
+    &:hover,
+    &:focus {
+    color: var(--banner-text-color);
+    background-color: var(--btn-color-hover);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    
+}
+}
+
+&__btn {
+    padding: 6px 22px 6px 22px;
+}
+
+&__item {
+    margin-right: 8px;
+    &:last-child {
+        margin-right: 0px;
+    }
+}
+}

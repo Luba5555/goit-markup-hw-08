@@ -1,0 +1,93 @@
+.header {
+    border: 1px solid var(--border-header);
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    &__list {
+        display: flex;
+        color: var(--header-color-hover);
+            }
+        &__item {
+            position: relative;
+            font-weight: 500;
+            line-height: calc(16 / 14);
+            letter-spacing: 0.02em;
+            margin-right: 50px;
+            
+            padding-top: 32px;
+            padding-bottom: 32px;
+            &:last-child {
+                margin-right: 0;
+                    }
+                }
+    
+        &__link {
+            color: var(--main-title-color);
+        
+            transition: color var(--time) var(--function-time);
+
+            &__link:hover,
+            &__link:focus {
+            color: var(--header-color-hover);
+            
+                }
+            &--current {
+                color: var(--header-color-hover);
+                    }    
+             
+            }
+        .nav__link--current::after { 
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            
+            transform: translateX(-50%);
+                        
+            width: 100%;
+            height: 4px;
+            
+            border-radius: 2px;
+            background-color: var(--btn-color);
+                
+            }   
+    
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 50px;
+    &__list {
+        position: relative;
+        font-weight: 500;
+        line-height: calc(16 / 14);
+        letter-spacing: 0.02em;
+             
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+    &__item {
+        gap: 10px;
+        color: var(--header-inform-color); 
+        
+        transition: color var(--time) var(--function-time);
+        &:hover,
+        &:focus {
+        color: var(--header-color-hover);
+        }
+    }
+    &__icon {
+        fill: currentColor;
+    }
+}
+
+
