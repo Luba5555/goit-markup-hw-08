@@ -3,27 +3,32 @@
 
     &__list {
         display: flex;
+        flex-direction: column;
+        
         padding: 0 0;
     }
     
     &__icons {
-        width: 270px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
         height: 120px;
         background: var(--background-team-color);
         border-radius: 4px;
         margin-bottom: 30px;
         margin-top: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center
+        
     }
     
     &__item {
-        margin-right: 30px;
-        width: 270px;
-            &__item:last-child {
-                margin-right: 0;
-            }
+        width: 450px;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 30px;
+    
     }
      
         
@@ -33,9 +38,50 @@
         text-transform: uppercase;
         color: var(--main-title-color);
         margin-bottom: 10px;
+        text-align: center;
     }
     
     &__desc {
         line-height: calc(24 / 14);
     }
-}
+
+
+    @media screen and (min-width: 768px) {
+    
+    &__list {
+          display: flex;
+          max-width: 100vw;
+          height: auto;
+          flex-wrap: wrap;
+          flex-direction: row;
+          
+          gap: 30px;
+        }
+        &__item {
+          max-width: 354px;
+          margin-bottom: 0;
+        
+        }
+        &__title {
+            text-align: start;
+          }
+        &__desc {
+          text-align: start;
+        }
+      }
+   
+    
+      @media screen and (min-width: 1200px) {
+                           
+        display: flex;
+        width: 100vw;
+        gap: 30px;
+        &__item {
+          max-width: 270px;
+          height: auto;
+          margin-right: 0;
+        }
+      }
+            
+        }
+

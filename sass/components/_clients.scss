@@ -4,19 +4,20 @@
     &__title {
         font-style: normal;
         font-weight: 700;
-        font-size: 36px;
-        line-height: calc(42 / 36);
+        font-size: 28px;
+        line-height: calc(33 / 28);
         text-align: center;
         color: var(--main-title-color);
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
 
     &__list {
         display: flex;
+        flex-wrap: wrap;
         gap: 30px;
         }
     &__card {
-            width: 170px;
+            width: 210px;
             height: 92px;    
     }
 
@@ -48,5 +49,41 @@
             fill: var(--header-color-hover); 
         }
 }
+@media screen and (min-width: 768px) {
+   
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        }
+    &__card {
+            width: 226px;
+    }
+
+    
 }
+  
+
+  @media screen and (min-width: 1200px) {
+    &__title {
+        font-size: 36px;
+        line-height: calc(42 / 36);
+        margin-bottom: 50px;
+    }
+
+    &__list {
+        display: flex;
+        gap: 30px;
+        }
+    &__card {
+            width: 170px;
+            height: 92px;    
+    }
+
+    
+}
+  }
+
+
 

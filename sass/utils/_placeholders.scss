@@ -1,4 +1,16 @@
 %section {
+    // mobile screen
+  @media screen and (min-width: 480px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  // tablet screen
+ 
+
+  // desktop screen
+  @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
+  }
+    
 }
