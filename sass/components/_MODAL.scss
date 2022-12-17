@@ -136,7 +136,7 @@
     display: flex;
     justify-content: space-between;
     width: 423px;
-    margin-left: 12px;
+    
     margin-right: 11px;
     margin-bottom: 30px;
     gap: 7px;
@@ -146,6 +146,10 @@
     color: inherit;
 
     user-select: none;
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 12px;
+      }
   } 
   .modal-form-agreement-link {
     text-decoration-line: underline;
